@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-BG);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3, .cls-4, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: 0.07;
+      }
+
+      .cls-4 {
+        opacity: 0.08;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.018" y1="0.069" x2="0.882" y2="0.741" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f36d78"/>
+      <stop offset="1" stop-color="#fcb058"/>
+    </linearGradient>
+    <clipPath id="clip-BG">
+      <rect width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g id="BG" class="cls-1">
+    <rect class="cls-5" width="1920" height="1080"/>
+    <rect id="Rectangle_14" data-name="Rectangle 14" class="cls-2" width="1920" height="1080"/>
+    <circle id="Ellipse_17" data-name="Ellipse 17" class="cls-3" cx="437.5" cy="437.5" r="437.5" transform="translate(-124 -315)"/>
+    <circle id="Ellipse_16" data-name="Ellipse 16" class="cls-4" cx="272" cy="272" r="272" transform="translate(458 -273)"/>
+  </g>
+</svg>
