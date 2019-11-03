@@ -53,4 +53,5 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['rivide'] = 'RivideController';
+$route['rivide'] = 'RivideController/index';
+$route['rivide/rivide'] = 'RivideController/rivide';

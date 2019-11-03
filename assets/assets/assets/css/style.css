@@ -1,0 +1,129 @@
+/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: ThemeSelection
+	
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+:root {
+    --style-color: #3893F8;
+    --font-color: #373737;
+}
+
+.main-menu.menu-light .navigation>li.open>a {
+    color: var(--style-color);
+}
+
+.main-menu.menu-light .navigation>li.open .hover>a:before {
+    border-color: var(--style-color);
+    background-color: var(--style-color);
+}
+
+.main-menu.menu-light .navigation>li.active>a {
+    color: var(--style-color);
+}
+
+.main-menu.menu-light .navigation>li .active>a {
+    color: var(--style-color);
+}
+
+.main-menu.menu-light .navigation>li ul .active>a {
+    color: var(--style-color);
+}
+
+.main-menu.menu-light .navigation>li ul .active>a:before {
+    border-color: var(--style-color);
+    background-color: var(--style-color);
+}
+
+.main-menu.menu-light ul.menu-popout li.open>a:before {
+    border-color: var(--style-color);
+    background-color: var(--style-color);
+}
+
+.main-menu.menu-light ul.menu-popout .active>a:before {
+    border-color: var(--style-color);
+    background-color: var(--style-color);
+}
+
+.main-menu.menu-light .navigation>li.hover>a,
+.main-menu.menu-light .navigation>li:hover>a,
+.main-menu.menu-light .navigation>li.active>a {
+    color: var(--style-color);
+}
+
+body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-light .navigation .hover>a>i,
+body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-light .navigation:hover>a>i,
+body.vertical-layout.vertical-menu.menu-expanded .main-menu.menu-light .navigation .open>a>i {
+    -webkit-box-shadow: 0 0 20px rgba(56, 147, 248, .1);
+    box-shadow: 0 0 20px rgba(56, 147, 248, .1);
+}
+
+body.vertical-layout.bg-gradient-x-b-g .navbar-container {
+    background-image: -webkit-gradient(linear, left top, right top, from(#3895f6), to(#56f4b5));
+    background-image: -webkit-linear-gradient(left, #3895f6, #56f4b5);
+    background-image: -moz-linear-gradient(left, #3895f6, #56f4b5);
+    background-image: -o-linear-gradient(left, #3895f6, #56f4b5);
+    background-image: linear-gradient(to right, #3895f6, #56f4b5);
+    background-repeat: repeat-x;
+}
+
+body.vertical-layout.bg-gradient-x-b-g .content-wrapper-before {
+    border-bottom-left-radius: 23px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#3895f6), to(#56f4b5));
+    background-image: -webkit-linear-gradient(left, #3895f6, #56f4b5);
+    background-image: -moz-linear-gradient(left, #3895f6, #56f4b5);
+    background-image: -o-linear-gradient(left, #3895f6, #56f4b5);
+    background-image: linear-gradient(to right, #3895f6, #56f4b5);
+    background-repeat: repeat-x;
+}
+
+html body .content .content-wrapper .content-wrapper-before {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 250px;
+
+    -webkit-transition: 300ms ease all;
+    -moz-transition: 300ms ease all;
+    -o-transition: 300ms ease all;
+    transition: 300ms ease all;
+}
+
+.main-menu.menu-light .navigation-background:after {
+    position: absolute;
+    z-index: 3;
+
+    width: 100%;
+    height: 100%;
+
+    content: ' ';
+
+    opacity: .88;
+    background: #f4f5fa;
+}
+
+.main-menu.menu-shadow {
+    -webkit-box-shadow: 0px 0 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0 0px rgba(0, 0, 0, 0);
+}
+
+.main-menu.menu-light {
+    color: #2b345f;
+    border-right: 0px solid #e4e7ed;
+    background: #fff;
+}
+
+/* .main-menu.menu-light .navigation>li.active>a {
+    font-weight: 700;
+    color: #2b345f;
+    background: white;
+    border-radius: 40px;
+} */
