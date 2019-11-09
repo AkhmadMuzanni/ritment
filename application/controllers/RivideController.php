@@ -10,7 +10,7 @@ class RivideController extends CI_Controller {
     public function rivide()
     {
         $this->load->helper('url');
-        $this->load->view('rivide/dashboard');
+        $this->load->view('rivide/pengguna');
     }
 
 }

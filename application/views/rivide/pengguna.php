@@ -10,43 +10,43 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Sources Datatable - Chameleon Admin - Modern Bootstrap 4 WebApp & Dashboard HTML Template + UI Kit</title>
-    <link rel="apple-touch-icon" href="assets/app-assets/images/ico/logo.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/app-assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/assets/app-assets/images/ico/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/assets/app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
     <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
     <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/css/vendors.css">
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/vendors/css/tables/datatable/datatables.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/vendors/css/extensions/toastr.css">
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/vendors/css/forms/selects/select2.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/vendors/css/ui/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/css/vendors.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/vendors/css/extensions/toastr.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/vendors/css/forms/selects/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/vendors/css/ui/prism.min.css">
     <!-- END VENDOR CSS-->
 
     <!-- BEGIN CHAMELEON  CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/css/app.css">
     <!-- END CHAMELEON  CSS-->
 
     <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/css/core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/css/plugins/extensions/toastr.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/css/plugins/extensions/toastr.css">
     <!-- END Page Level CSS-->
 
     <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/assets/css/style.css">    
-    <link rel="stylesheet" type="text/css" href="assets/app-assets/css/plugins/forms/validation/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/assets/css/style.css">    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/app-assets/css/plugins/forms/validation/form-validation.css">
      <!-- END Custom CSS-->  
 
-     {{-- <link rel="stylesheet" type="text/css" href="assets/assets/scss/style.css"> --}}
+     <!-- {{-- <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/assets/assets/scss/style.css"> --}} -->
 
     <!-- BEGIN VENDOR JS-->
-    <script src="assets/app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/assets/app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
    
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="assets/app-assets/js/scripts/forms/validation/form-validation.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/assets/app-assets/js/scripts/forms/validation/form-validation.min.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
-    <script type="text/javascript" src="assets/app-assets/validator/validator.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/assets/app-assets/validator/validator.min.js"></script>
 
 
 
@@ -60,7 +60,7 @@
             <ul class="nav navbar-nav mr-auto float-left">
               <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1"></i></a></li>
               <li class="nav-item d-none d-md-block"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu"></i></a></li>              
-              {{-- <li class="dropdown nav-item mega-dropdown d-none d-md-block"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Mega</a>
+              <li class="dropdown nav-item mega-dropdown d-none d-md-block"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Mega</a>
                 <ul class="mega-dropdown-menu dropdown-menu row">
                   <li class="col-md-2">
                     <h6 class="dropdown-menu-header text-uppercase mb-1"><i class="ft-link"></i> Quick Links</h6>
@@ -97,9 +97,9 @@
                     <h6 class="dropdown-menu-header text-uppercase"><i class="ft-layers"></i> Recent Products</h6>
                     <div class="carousel slide pt-1" id="carousel-example" data-ride="carousel">
                       <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active"><img class="d-block w-100" src="assets/app-assets/images/carousel/08.jpg" alt="First slide"></div>
-                        <div class="carousel-item"><img class="d-block w-100" src="assets/app-assets/images/carousel/03.jpg" alt="Second slide"></div>
-                        <div class="carousel-item"><img class="d-block w-100" src="assets/app-assets/images/carousel/01.jpg" alt="Third slide"></div>
+                        <div class="carousel-item active"><img class="d-block w-100" src="<?php echo base_url(); ?>assets/assets/app-assets/images/carousel/08.jpg" alt="First slide"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="<?php echo base_url(); ?>assets/assets/app-assets/images/carousel/03.jpg" alt="Second slide"></div>
+                        <div class="carousel-item"><img class="d-block w-100" src="<?php echo base_url(); ?>assets/assets/app-assets/images/carousel/01.jpg" alt="Third slide"></div>
                       </div><a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev"><span class="la la-angle-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next"><span class="la la-angle-right icon-next" aria-hidden="true"></span><span class="sr-only">Next</span></a>
                       <h5 class="pt-1">Special title treatment</h5>
                       <p>Jelly beans sugar plum.</p>
@@ -154,7 +154,7 @@
                     </form>
                   </li>
                 </ul>
-              </li> --}}
+              </li>
               <li class="dropdown d-none d-md-block mr-1"><a class="dropdown-toggle nav-link" id="apps-navbar-links" href="#" data-toggle="dropdown">
                                  Apps</a>
                 <div class="dropdown-menu">
@@ -227,15 +227,15 @@
                 </ul>
               </li>              
               <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">             
-                    <span class="avatar avatar-online"><img src="assets/app-assets/images/portrait/small/avatar-s-19.png" alt="avatar"></span></a>
+                    <span class="avatar avatar-online"><img src="<?php echo base_url(); ?>assets/assets/app-assets/images/portrait/small/avatar-s-19.png" alt="avatar"></span></a>
                     <div class="dropdown-menu dropdown-menu-right">
-                      <div class="arrow_box_right"><a class="dropdown-item" href="#"><span class="avatar avatar-online"><img src="assets/app-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><span class="user-name text-bold-700 ml-1">John Doe</span></span></a>
+                      <div class="arrow_box_right"><a class="dropdown-item" href="#"><span class="avatar avatar-online"><img src="<?php echo base_url(); ?>assets/assets/app-assets/images/portrait/small/avatar-s-19.png" alt="avatar"><span class="user-name text-bold-700 ml-1">John Doe</span></span></a>
                         <div class="dropdown-divider">
                           </div>
                             <a class="dropdown-item" href="user-profile.html"><i class="ft-user"></i> Edit Profile</a>
-                            {{-- <a class="dropdown-item" href="email-application.html"><i class="ft-mail"></i> My Inbox</a>
+                            <a class="dropdown-item" href="email-application.html"><i class="ft-mail"></i> My Inbox</a>
                             <a class="dropdown-item" href="project-summary.html"><i class="ft-check-square"></i> Task</a>
-                            <a class="dropdown-item" href="chat-application.html"><i class="ft-message-square"></i> Chats</a> --}}
+                            <a class="dropdown-item" href="chat-application.html"><i class="ft-message-square"></i> Chats</a>
                         <div class="dropdown-divider"></div><a class="dropdown-item" href="{{route('logout')}}"><i class="ft-power"></i> Logout</a>
                       </div>
                     </div>
@@ -252,7 +252,7 @@
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow " data-scroll-to-active="true">
         <div class="navbar-header">
           <ul class="nav navbar-nav flex-row" style="margin-left: 30px;">       
-            <li class="nav-item mr-auto"><a class="navbar-brand" href="{{route('dashboard')}}"><img class="brand-logo" alt="Chameleon admin logo" src="assets/app-assets/images/logo/logo.png"/>
+            <li class="nav-item mr-auto"><a class="navbar-brand" href="{{route('dashboard')}}"><img class="brand-logo" alt="Chameleon admin logo" src="<?php echo base_url(); ?>assets/assets/app-assets/images/logo/logo.png"/>
                 <h3 class="brand-text">SIDESTAL</h3></a></li>
             <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
           </ul>
@@ -589,23 +589,23 @@
 
    
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="assets/app-assets/vendors/js/tables/datatable/datatables.min.js" type="text/javascript"></script>    
+    <script src="<?php echo base_url(); ?>assets/assets/app-assets/vendors/js/tables/datatable/datatables.min.js" type="text/javascript"></script>    
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN CHAMELEON  JS-->
-    <script src="assets/app-assets/js/core/app-menu.js" type="text/javascript"></script>
-    <script src="assets/app-assets/js/core/app.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/assets/app-assets/js/core/app-menu.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/assets/app-assets/js/core/app.js" type="text/javascript"></script>
     <!-- END CHAMELEON  JS-->
      
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="assets/app-assets/vendors/js/forms/select/select2.full.min.js" type="text/javascript"></script>    
+    <script src="<?php echo base_url(); ?>assets/assets/app-assets/vendors/js/forms/select/select2.full.min.js" type="text/javascript"></script>    
     <!-- END PAGE VENDOR JS-->
      <!-- BEGIN PAGE LEVEL JS-->
-    <script src="assets/app-assets/js/scripts/forms/select/form-select2.js" type="text/javascript"></script>
-    <script src="assets/app-assets/js/scripts/modal/components-modal.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/assets/app-assets/js/scripts/forms/select/form-select2.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/assets/app-assets/js/scripts/modal/components-modal.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
 
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="assets/app-assets/vendors/js/extensions/toastr.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/assets/app-assets/vendors/js/extensions/toastr.min.js" type="text/javascript"></script>
     <!-- END PAGE VENDOR JS-->     
 
     <script type="text/javascript">
