@@ -13,7 +13,7 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item active"><a class="nav-link" href="beranda.php">BERANDA</a></li>
-                            <li class="nav-item"><a class="nav-link" href="rivide.php">RIVIDE</a></li>
+                            <li class="nav-item"><a class="nav-link" href="rivide">RIVIDE</a></li>
                             <li class="nav-item"><a class="nav-link" href="riptor.php">RIPTOR</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.php">BANTUAN</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.php">TENTANG KAMI</a></li>
