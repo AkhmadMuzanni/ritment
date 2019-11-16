@@ -26,6 +26,7 @@
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
     <link rel="stylesheet" type="text/css" href="<?= BASE_THEME; ?>assets/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= BASE_THEME; ?>css/style.css">
     <!-- END Custom CSS-->
 </head>
 
@@ -60,13 +61,13 @@
                                     <div class="card-body">
                                         <form class="form-horizontal" role="form" action="" method="POST">
                                             <fieldset class="form-group position-relative has-icon-left">
-                                                <input type="text" class="form-control" id="username" name="username" placeholder="Your Username" required>
+                                                <input type="text" class="form-control" id="username" name="email" placeholder="E-mail" required>
                                                 <div class="form-control-position">
                                                     <i class="ft-user"></i>
                                                 </div>
                                             </fieldset>
                                             <fieldset class="form-group position-relative has-icon-left">
-                                                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
+                                                <input type="password" class="form-control" id="password" name="password" placeholder="Kata Sandi" required>
                                                 <div class="form-control-position">
                                                     <i class="ft-lock"></i>
                                                 </div>
@@ -78,7 +79,7 @@
                                                 <div class="col-md-6 col-12 float-sm-left text-center text-sm-right"><a href="recover-password.html" class="card-link">Lupa Kata Sandi?</a></div>
                                             </div>
                                             <div class="form-group text-center">
-                                                <button type="submit" class="btn btn-block btn-glow btn-bg-gradient-x-purple-blue col-12 mr-1 mb-1">Login</button>
+                                                <button type="submit" class="btn btn-block btn-glow btn-bg-gradient-x-orange-pink col-12 mr-1 mb-1">Login</button>
                                             </div>
 
                                         </form>
