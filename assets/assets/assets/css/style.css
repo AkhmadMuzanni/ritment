@@ -140,3 +140,54 @@ html body .content .content-wrapper .content-wrapper-before {
 .navbar-header .navbar-brand .brand-logo {
     width: 60%;
 }
+
+
+/* Project Saya */
+
+.project_place {
+    color: #b7b7b7;
+}
+
+.project_title {
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.project_detail {
+    font-size: small;
+    margin-bottom: 0px;
+}
+
+.project_icon {}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    background: #f6f6f6;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.frame img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.link_project {
+    color: #b7b7b7;
+    font-size: small;
+}
+
+.link_project:hover {
+    color: #F67A70;
+}
