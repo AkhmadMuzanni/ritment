@@ -30,7 +30,7 @@
     <!-- END Custom CSS-->
 </head>
 
-<body class="vertical-layout vertical-menu 1-column  bg-full-screen-image menu-expanded blank-page blank-page" data-open="click" data-menu="vertical-menu" data-color="bg-gradient-x-purple-blue" data-col="1-column">
+<body class="vertical-layout vertical-menu 1-column bg-full-screen-image-login menu-expanded blank-page blank-page" data-open="click" data-menu="vertical-menu" data-color="bg-gradient-x-orange-pink" data-col="1-column">
     <!-- ////////////////////////////////////////////////////////////////////////////-->
     <div class="app-content content">
         <div class="content-wrapper">
@@ -76,10 +76,16 @@
                                                 <div class="col-md-6 col-12 text-center text-sm-left">
 
                                                 </div>
-                                                <div class="col-md-6 col-12 float-sm-left text-center text-sm-right"><a href="recover-password.html" class="card-link">Lupa Kata Sandi?</a></div>
+                                                <div class="col-md-6 col-12 float-sm-left text-center text-sm-right"><a href="recover-password.html" class="card-link text-primary-color-orange">Lupa Kata Sandi?</a></div>
                                             </div>
                                             <div class="form-group text-center">
                                                 <button type="submit" class="btn btn-block btn-glow btn-bg-gradient-x-orange-pink col-12 mr-1 mb-1">Login</button>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-md-3 col-12 text-center text-sm-left">
+
+                                                </div>
+                                                <div class="col-md-9 col-12 float-sm-left text-center text-sm-right text-primary-color-orange">Belum punya akun?<a href="<?= BASE_URL . 'authcontroller/register' ?>" class="card-link text-primary-color-pink"> Daftar sekarang</a></div>
                                             </div>
 
                                         </form>

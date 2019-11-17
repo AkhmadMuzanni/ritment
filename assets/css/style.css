@@ -204,13 +204,35 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* LOGIN COMPONENT */
+/* REGISTER COMPONENT */
 
-html body.bg-full-screen-image {
-	background: url(../img/login_background.svg) no-repeat center center fixed;
+html body.bg-full-screen-image-register {
+	background: url(../assets/img/register_background.svg) no-repeat center center fixed;
 
 	-webkit-background-size: cover;
 	background-size: cover;
+}
+
+.text-label-bold {
+	font-weight: bold;
+}
+
+/* LOGIN COMPONENT */
+
+html body.bg-full-screen-image-login {
+	background: url(../assets/img/login_background.svg) no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.bg-gradient-x-orange-pink {
+	background-image: -webkit-gradient(linear, left top, right top, from(#fcaf58), to(#f36e78));
+	background-image: -webkit-linear-gradient(left, #fcaf58, #f36e78);
+	background-image: -moz-linear-gradient(left, #fcaf58, #f36e78);
+	background-image: -o-linear-gradient(left, #fcaf58, #f36e78);
+	background-image: linear-gradient(to right, #fcaf58, #f36e78);
+	background-repeat: repeat-x;
 }
 
 .btn-bg-gradient-x-orange-pink {
@@ -244,4 +266,26 @@ html body.bg-full-screen-image {
 	background-image: -o-linear-gradient(left, #fcaf58 0%, #f36e78 50%, #fcaf58 100%) !important;
 	background-image: linear-gradient(90deg, #fcaf58 0%, #f36e78 50%, #fcaf58 100%) !important;
 	background-position: right center;
+}
+
+.text-primary-color-orange {
+	color: #fcaf59;
+	font-size: 9pt;
+}
+
+.text-primary-color-pink {
+	color: #f36e78;
+	font-weight: bold;
+	font-size: 9pt;
+}
+
+.text-primary-color-orange:hover {
+	color: #f36e78;
+	font-size: 9pt;
+}
+
+.text-primary-color-pink:hover {
+	color: #fcaf59;
+	font-weight: bold;
+	font-size: 9pt;
 }
