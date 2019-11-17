@@ -63,22 +63,22 @@
                                                     <fieldset class="form-group position-relative" id="field_email">
                                                         <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" required>
                                                     </fieldset>
-                                                    <fieldset class="form-group position-relative" id="field_alamatRumah" hidden>
+                                                    <fieldset class="form-group position-relative" id="field_alamatRumah">
                                                         <input type="text" class="form-control" id="alamatRumah" name="alamatRumah" placeholder="Alamat Rumah" required>
                                                     </fieldset>
-                                                    <fieldset class="form-group position-relative" id="field_alamatAsal" hidden>
+                                                    <fieldset class="form-group position-relative" id="field_alamatAsal">
                                                         <input type="text" class="form-control" id="alamatAsal" name="alamatAsal" placeholder="Alamat Asal" required>
                                                     </fieldset>
-                                                    <fieldset class="form-group position-relative" id="field_alamatDomisili" hidden>
+                                                    <fieldset class="form-group position-relative" id="field_alamatDomisili">
                                                         <input type="text" class="form-control" id="alamatDomisili" name="alamatDomisili" placeholder="Alamat Domisili" required>
                                                     </fieldset>
-                                                    <fieldset class="form-group position-relative" id="field_kampus" hidden>
+                                                    <fieldset class="form-group position-relative" id="field_kampus">
                                                         <input type="text" class="form-control" id="kampus" name="kampus" placeholder="Kampus" required>
                                                     </fieldset>
-                                                    <fieldset class="form-group position-relative" id="field_instansi" hidden>
+                                                    <fieldset class="form-group position-relative" id="field_instansi">
                                                         <input type="text" class="form-control" id="instansi" name="instansi" placeholder="Instansi" required>
                                                     </fieldset>
-                                                    <fieldset class="form-group position-relative" id="field_alamatInstansi" hidden>
+                                                    <fieldset class="form-group position-relative" id="field_alamatInstansi">
                                                         <input type="text" class="form-control" id="alamatInstansi" name="alamatInstansi" placeholder="Alamat Instansi" required>
                                                     </fieldset>
                                                     <fieldset class="form-group position-relative">
@@ -111,38 +111,46 @@
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
     <script>
-        var selectedType = $('#ritmentType').val();
-        hideElement(selectedType);
-
-        $('#ritmentType').on('change', function() {
-            hideElement(selectedType);
+        $(function() {
+            var selectedType = $('#ritmentType').val();
+            filterElement(selectedType);
         });
 
-        function hideElement(param) {
-            if (param == 'Riptor') {
-                $('#field_alamatRumah').removeAttr('hidden');
+        $('#ritmentType').on('change', function() {
+            var type = $('#ritmentType').val();
+            filterElement(type);
+        });
 
-                $('#field_alamatAsal').attr('hidden');
-                $('#field_alamatDomisili').attr('hidden');
-                $('#field_kampus').attr('hidden');
-                $('#field_instansi').attr('hidden');
-                $('#field_alamatInstansi').attr('hidden');
-            } else if (param == 'Riseek') {
-                $('#field_alamatAsal').removeAttr('hidden');
-                $('#field_alamatDomisili').removeAttr('hidden');
-                $('#field_kampus').removeAttr('hidden');
+        function showHideElement(action, element) {
+            if (action == 'show') {
+                $(element).show();
+            } else if (action == 'hide') {
+                $(element).hide();
+            }
+        }
 
-                $('#field_alamatRumah').attr('hidden');
-                $('#field_instansi').attr('hidden');
-                $('#field_alamatInstansi').attr('hidden');
-            } else if (param == 'Rivide') {
-                $('#field_alamatRumah').removeAttr('hidden');
-                $('#field_instansi').removeAttr('hidden');
-                $('#field_alamatInstansi').removeAttr('hidden');
-
-                $('#field_alamatAsal').attr('hidden');
-                $('#field_alamatDomisili').attr('hidden');
-                $('#field_kampus').attr('hidden');
+        function filterElement(type) {
+            if (type == 'Riptor') {
+                showHideElement('show', '#field_alamatRumah');
+                showHideElement('hide', '#field_alamatAsal');
+                showHideElement('hide', '#field_alamatDomisili');
+                showHideElement('hide', '#field_kampus');
+                showHideElement('hide', '#field_instansi');
+                showHideElement('hide', '#field_alamatInstansi');
+            } else if (type == 'Riseek') {
+                showHideElement('hide', '#field_alamatRumah');
+                showHideElement('show', '#field_alamatAsal');
+                showHideElement('show', '#field_alamatDomisili');
+                showHideElement('show', '#field_kampus');
+                showHideElement('hide', '#field_instansi');
+                showHideElement('hide', '#field_alamatInstansi');
+            } else if (type == 'Rivide') {
+                showHideElement('show', '#field_alamatRumah');
+                showHideElement('hide', '#field_alamatAsal');
+                showHideElement('hide', '#field_alamatDomisili');
+                showHideElement('hide', '#field_kampus');
+                showHideElement('show', '#field_instansi');
+                showHideElement('show', '#field_alamatInstansi');
             }
         }
     </script>
