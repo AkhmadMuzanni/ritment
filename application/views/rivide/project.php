@@ -100,36 +100,33 @@
               </div> -->
                 <div class="card-body">
                   <div class="row">
-                    <div class="col-md-2">
-
-                      <div class="mx-auto circle">
+                    <div class="col-md-1">
+                      <div class="mx-auto circle vertical-center">
                         <div class="frame">
                           <img src="<?php echo base_url(); ?>assets/assets/app-assets/images/icons/voice_record.svg">
                         </div>
                       </div>
-
                     </div>
-                    <div class="col-md-7">
-                      <h6 class="project_place">Dinas Pertanian Kota Malang</h6>
-                      <p class="font-weight-bold project_title">Proyek Traktor IoT</p>
-                      <p class="font-weight-bold project_detail">"Diperlukan tenaga modifikasi traktor berbasis teknologi IoT khjkdasjkdhsakjdhsajdhasjkdhaskjdhsajdcnoifhrbfksd"</p>
 
+                    <div class="col-md-8">
+                      <div>
+                        <h6 class="project_place">Dinas Pertanian Kota Malang</h6>
+                        <p class="font-weight-bold project_title">Proyek Traktor IoT</p>
+                        <p class="font-weight-bold project_detail">"Diperlukan tenaga modifikasi traktor berbasis teknologi IoT khjkdasjkdhsakjdhsajdhasjkdhaskjdhsajdcnoifhrbfksd"</p>
+                      </div>
                     </div>
+
                     <div class="col-md-3 d-flex">
-                      <div class="row w-100 h-50">
+                      <div class="row w-100 h-50 detail">
                         <div class="col pull-right">
-                          <button class="btn btn-default btn-sm pull-right">Kapasitas 2/3 Terisi</button>
-                        </div>
-                        
-                      </div>
-                      <div class="row w-100 h-50">
-                        <div class="col align-self-end">
-                          <a href="" class="pull-right link_project">Lihat Project</a>
+                          <button class="btn btn-grad btn-sm pull-right">Kapasitas 2/3 Terisi</button>
                         </div>
                       </div>
-
-
-
+                      <div class="row w-100 h-50 link-detail detail">
+                        <div class="col pull-right align-self-end">
+                          <a href="" class="pull-right link-project">Lihat Project</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
